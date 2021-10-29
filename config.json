@@ -1,0 +1,6 @@
+{
+    "projectID": "iot-poc-330513",
+    "region": "europe-west1",
+    "registryID": "iotpoc-registry",
+    "device": "dmcs-raspberrypi"
+}
