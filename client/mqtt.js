@@ -12,7 +12,7 @@ const topics = {
     sub: `/devices/${config.device}/config`
 }
 
-const key = fs.readFileSync('./certs/rasp_private.pem')
+const key = fs.readFileSync('../certs/rasp_private.pem')
 
 const username = 'unused';
 const password = jwt.sign({
