@@ -4,7 +4,7 @@ This projects contains documentation and code regarding an IoT proof of concept 
 
 ## Certificates
 
-Generate certificates for device authentication on GCP's broker: `./gen_certs.sh`
+Generate certificates for all devices: `./gen_certs.sh`. In this script there is an array of device names that can be edited so the script generates certificates for all. These certificates will be referenced in both the client(s) and in terraform files that declare GCP IoT Core devices.
 
 ## Infrastructure
 
@@ -14,7 +14,6 @@ Generate certificates for device authentication on GCP's broker: `./gen_certs.sh
 - Create a `.tfvars` file and add the required variable values (see `infra/.tfvars.sample` for a sample)
 - `terraform init`
 - `terraform apply -var-file=.tfvars`
-
 
 ## Client
 

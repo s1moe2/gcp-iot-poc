@@ -3,3 +3,6 @@ certs/
 .DS_Store
 .tfvars
 .terraform/
+*.tfstate
+*.tfstate.*
+device_certs/

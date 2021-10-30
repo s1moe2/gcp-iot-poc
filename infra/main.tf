@@ -7,19 +7,6 @@ terraform {
   }
 }
 
-variable "gcp_project_id" {
-  type = string
-}
-
-variable "gcp_credentials_key_file" {
-  type = string
-}
-
-variable "gcp_region" {
-  type    = string
-  default = "europe-west1"
-}
-
 provider "google" {
   credentials = file(var.gcp_credentials_key_file)
   project     = var.gcp_project_id
